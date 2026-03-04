@@ -6,8 +6,22 @@
 <title>SMASH TV</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; font-family: 'Courier New', monospace; }
-  #gameCanvas { display: block; border: 2px solid #333; image-rendering: pixelated; }
+  body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+  }
+  #gameCanvas {
+    display: block;
+    /* No max-width — fills as much of the window as aspect ratio allows */
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
 </style>
 </head>
 <body>
